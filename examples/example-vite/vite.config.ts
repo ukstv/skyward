@@ -37,13 +37,6 @@ export default defineConfig({
   ],
   worker: {
     format: "es",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          o1js: ["o1js"],
-        },
-      },
-    },
   },
   resolve: {
     alias: {

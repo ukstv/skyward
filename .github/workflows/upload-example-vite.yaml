@@ -27,3 +27,7 @@ jobs:
         run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - name: Build
         run: pnpm run build
+      - uses: 'google-github-actions/auth@v2'
+        with:
+          project_id: 'spaceblanc'
+          workload_identity_provider: projects/670988994997/locations/global/workloadIdentityPools/github/providers/ukstv-github

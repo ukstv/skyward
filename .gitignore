@@ -2,4 +2,4 @@ node_modules/
 packages/*/dist/
 packages/*/node_modules/
 packages/skyward/src/version.ts
-apps/*/.wrangler/
+examples/*/dist/

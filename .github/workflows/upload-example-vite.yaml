@@ -34,3 +34,8 @@ jobs:
         with:
           project_id: "spaceblanc"
           workload_identity_provider: projects/670988994997/locations/global/workloadIdentityPools/github/providers/ukstv-github
+      - id: "upload-file"
+        uses: "google-github-actions/upload-cloud-storage@v2"
+        with:
+          path: "examples/example-vite/dist/"
+          destination: "skyward-public.ukstv.me"

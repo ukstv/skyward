@@ -30,7 +30,8 @@
     }
   },
   "files": [
-    "dist/"
+    "dist/",
+    "bin/"
   ],
   "bin": {
     "skyward": "dist/bin/skyward.js"

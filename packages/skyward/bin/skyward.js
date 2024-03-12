@@ -1,6 +1,5 @@
-import { main } from "../cli/main.js";
+import { main } from "../dist/cli/main.js";
 import { argv } from "node:process";
-
 main(argv)
   .then(() => {
     process.exit(0);

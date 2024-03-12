@@ -34,7 +34,7 @@
     "bin/"
   ],
   "bin": {
-    "skyward": "dist/bin/skyward.js"
+    "skyward": "bin/skyward.js"
   },
   "dependencies": {
     "@inquirer/input": "^2.0.1",

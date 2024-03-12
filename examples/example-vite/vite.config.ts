@@ -12,12 +12,38 @@ export default defineConfig({
   plugins: [
     react(),
     topLevelAwait(),
-    // VitePWA({
-    //   registerType: "autoUpdate",
-    // }),
+    VitePWA({
+      registerType: "autoUpdate",
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/swrd\.ukstv\.me\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "skyward-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+        ],
+        maximumFileSizeToCacheInBytes: 20971520, // 20MiB
+      },
+    }),
   ],
   worker: {
     format: "es",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          o1js: ["o1js"],
+        },
+      },
+    },
   },
   resolve: {
     alias: {
@@ -25,7 +51,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     headers: {
       "Cross-Origin-Embedder-Policy": "require-corp",
       "Cross-Origin-Opener-Policy": "same-origin",

@@ -1,6 +1,6 @@
 {
   "name": "skyward",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "build": "pnpm run gen:version && rm -rf ./dist && tsc -p ./tsconfig.build.json",

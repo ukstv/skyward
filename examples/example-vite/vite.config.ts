@@ -17,7 +17,7 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/swrd\.ukstv\.me\/.*/i,
+            urlPattern: /^https:\/\/d\.skyward\.run\/.*/i,
             handler: "CacheFirst",
             options: {
               cacheName: "skyward-cache",

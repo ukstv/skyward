@@ -7,7 +7,8 @@ With that ZK program compilation takes just a few seconds.
 
 Check out the demo at [https://skyward.run](https://skyward.run). The code for it is in [examples/example-vite](./examples/example-vite) folder.
 
-You could see pre-cached compilation is 4-5x faster. After you refresh the page, the improvement is about 15x, which is considerable for a repeat user.
+You could see pre-cached compilation is 2-5x faster, on mobile and desktop.
+After you refresh the page, the improvement is about 15x on mobile, which is considerable for a repeat user.
 More complex ZK program you have, more the difference is.
 
 ## Installation

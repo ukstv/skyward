@@ -5,7 +5,7 @@ Skyward reduces compilation time of a O1JS ZK program on Web.
 Skyward allows you to pre-cache artifacts like prover keys, verification keys, SRS, and so on.
 With that ZK program compilation takes just a few seconds.
 
-Check out the demo at [https://skyward.press](https://skyward.press). The code for it is in [examples/example-vite](./examples/example-vite) folder.
+Check out the demo at [https://skyward.run](https://skyward.run). The code for it is in [examples/example-vite](./examples/example-vite) folder.
 
 ## Installation
 

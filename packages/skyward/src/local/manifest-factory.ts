@@ -45,7 +45,7 @@ async function uploadFn(
   if (upload.status !== 204) {
     throw new Error(`Not uploaded: ${localFilename.href}`);
   }
-  return new URL(`https://swrd.ukstv.me/${userId}/${remoteFilename}`);
+  return new URL(`https://d.skyward.run/${userId}/${remoteFilename}`);
 }
 
 export class ManifestFactory {

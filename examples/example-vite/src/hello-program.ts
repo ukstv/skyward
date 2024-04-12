@@ -7,7 +7,7 @@ export const HelloProgram = ZkProgram({
   methods: {
     addition: {
       privateInputs: [Field, Field],
-      method(sum, a, b) {
+      async method(sum, a, b): Promise<Bool> {
         return a.add(b).equals(sum);
       },
     },
